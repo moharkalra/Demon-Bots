@@ -1,0 +1,28 @@
+{
+   "name": "FOMO Machine",
+   "version": "1",
+   "manifest_version": 2,
+   "content_security_policy": "script-src 'self' 'unsafe-eval' 'sha256-yE7x5iXh+s72IhH9omMOiAlz1pt/h1kPXIP7+p3seWo=' https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js ; object-src 'self'",
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+     "default_popup": "popup.html"
+   },
+   "permissions": [
+     "https://*/",
+     "http://*/",
+     "tabs",
+     "alarms",
+     "webRequest",
+     "*://www.facebook.com/*",
+   "*://www.instagram.com/*",
+   "webRequestBlocking"
+
+   ],
+   "web_accessible_resources": [
+   "gotcha.html",
+   "verified.html",
+   "unverified.html"
+]
+}

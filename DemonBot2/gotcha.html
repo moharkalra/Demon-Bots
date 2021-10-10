@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>reCAPTCHA challenge</title>
+      <link rel="stylesheet" href="gotcha.css" type="text/css" charset="utf-8">
+
+   </head>
+   <body>
+      <div class="fbc">
+         <div class="fbc-alert"></div>
+         <div class="fbc-header">
+            <div class="fbc-logo">
+               <div class="fbc-logo-img"></div>
+               <div class="fbc-logo-text">reCAPTCHA</div>
+            </div>
+            <div class="fbc-imageselect-candidates"></div>
+            <div class="fbc-imageselect-message-without-candidate-image">
+               <label for="response" class="fbc-imageselect-message-text">
+                  <div class="prompt-text">Select all images which look <strong id = "prompt">more fun</strong> than your day so far</div>
+               </label>
+            </div>
+         </div>
+         <div>
+            <div class="fbc-imageselect-challenge">
+               <form>
+                  <div id = "select" class="fbc-payload-imageselect">
+                    <input id = "fbc-imageselect-checkbox-1" class="fbc-imageselect-checkbox-1" type="checkbox" name="response" value="0">
+                    <input id = "fbc-imageselect-checkbox-2" class="fbc-imageselect-checkbox-2" type="checkbox" name="response" value="1">
+                    <input id = "fbc-imageselect-checkbox-3" class="fbc-imageselect-checkbox-3" type="checkbox" name="response" value="2">
+                    <input id = "fbc-imageselect-checkbox-4" class="fbc-imageselect-checkbox-4" type="checkbox" name="response" value="3">
+                    <input id = "fbc-imageselect-checkbox-5" class="fbc-imageselect-checkbox-5" type="checkbox" name="response" value="4">
+                    <input id = "fbc-imageselect-checkbox-6" class="fbc-imageselect-checkbox-6" type="checkbox" name="response" value="5">
+                    <input id = "fbc-imageselect-checkbox-7" class="fbc-imageselect-checkbox-7" type="checkbox" name="response" value="6">
+                    <input id = "fbc-imageselect-checkbox-8" class="fbc-imageselect-checkbox-8" type="checkbox" name="response" value="7">
+                    <input id = "fbc-imageselect-checkbox-9" class="fbc-imageselect-checkbox-9" type="checkbox" name="response" value="8">
+                    <!--GET THIS FROM PYTHON SCRIPT 300X300 -->
+                    <img id = "behind" class="fbc-imageselect-payload" src="Loading.gif"/></div>
+                    <img id = "image" class="fbc-imageselect-payload2" src="Loading.gif"/></div>
+                    <div class="fbc-button-holder">
+                       <div class="fbc-button-help"><input id = "fbc-button-help" type="button" value="Help"/></div>
+                    </div>
+                  <div class="fbc-button-verify"><input id="fbc-button-verify" type="button" value="I'm not a robot &#8594;"/></div>
+               </form>
+            </div>
+         </div>
+        
+      </div>
+      </div>
+   </body>
+   <script src="gotcha.js"> </script>
+</html>
